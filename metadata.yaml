@@ -1,0 +1,23 @@
+dataset: ADIMMN
+description: ADaM-like Immunogenicity Analysis Dataset
+variables:
+  - name: USUBJID
+    label: Unique Subject Identifier
+  - name: VISIT
+    label: Visit (Week)
+  - name: METHOD
+    label: Bioanalytical Method
+    codelist: [Standard, PandA]
+  - name: PARAMCD
+    label: Parameter Code
+    codelist: [ADAQUAL]
+  - name: ADASTAT
+    label: ADA Qualitative Result
+    codelist: [POS, NEG]
+  - name: CONC_WK52_NGM
+    label: Week 52 trough concentration (ng/mL)
+    unit: ng/mL
+drug:
+  name: Adalimumab
+  brand: Humira
+  rxnorm: 314130
