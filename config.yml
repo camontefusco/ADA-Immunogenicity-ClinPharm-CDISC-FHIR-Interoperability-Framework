@@ -1,0 +1,20 @@
+upstream_reports_path: "/Users/cmontefusco/Coding projects/ada-panda-mini/reports"
+drug:
+  name: "Adalimumab"
+  brand: "Humira"
+  rxnorm: "314130"
+  type: "Human IgG1 anti-TNFα monoclonal antibody"
+  route: "Subcutaneous"
+  mechanism: "TNFα inhibitor"
+fhir:
+  loinc_ada_qual: "94445-7"
+  interpretation_codes:
+    positive: "POS"
+    negative: "NEG"
+adam_like:
+  dataset: "ADIMMN"
+  subject_var: "USUBJID"
+  ada_status_var: "ADASTAT"
+  method_var: "METHOD"
+  wk52_var: "CONC_WK52_NGM"
+  pass_flag_var: "FLAG_TOL_PASS"
