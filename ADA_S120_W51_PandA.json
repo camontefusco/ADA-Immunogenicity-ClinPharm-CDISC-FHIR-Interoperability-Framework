@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "ADA_S120_W51_PandA",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "94445-7",
+        "display": "Anti-drug antibody qualitative"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/S120"
+  },
+  "effectiveDateTime": "2025-01-01",
+  "valueBoolean": false,
+  "method": {
+    "text": "PandA ADA Assay"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "NEG"
+        }
+      ]
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/PK_S120_W51"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/drug-tolerance-flag",
+      "valueString": "PASS"
+    }
+  ]
+}
